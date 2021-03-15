@@ -1,0 +1,21 @@
+.stats {
+  display: flex;
+}
+
+.stats-item {
+  margin-right: 15px;
+}
+
+.menu-item {
+  display: flex;
+  width: 100%;
+}
+
+/* for 'load more' button */
+button.is-hidden {
+  display: none;
+}
+
+.button > spinner.is-hidden {
+  display: none;
+}
