@@ -1,21 +1,129 @@
-.stats {
-  display: flex;
+/* main styles */
+img {
+  display: block;
+  width: 216px;
 }
 
-.stats-item {
-  margin-right: 15px;
+.section {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.menu-item {
-  display: flex;
-  width: 100%;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.container {
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1280px;
+  }
 }
 
 /* for 'load more' button */
+.load-more {
+  color: white;
+  font-weight: 400;
+  display: block;
+  background-color: rgb(1, 28, 100);
+  width: 300px;
+  height: 50px;
+  font-size: 22px;
+
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
 button.is-hidden {
   display: none;
 }
 
 .button > spinner.is-hidden {
   display: none;
+}
+
+/* input */
+#searchQuery {
+  display: block;
+  width: 300px;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
+/* -- */
+@media screen and (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    padding-bottom: 20px;
+    background-color: rgb(205, 209, 197);
+  }
+}
+
+.menu__item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.photo-card {
+  display: flex;
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.stats-item {
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.material-icons {
+  margin-right: 10px;
+}
+
+.search-form {
+  margin-bottom: 50px;
 }

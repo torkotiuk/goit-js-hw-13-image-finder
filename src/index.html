@@ -11,49 +11,39 @@
     <title>goit-js-hw-13-image-finder</title>
   </head>
   <body>
-    <!-- <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="query"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-    </form>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 align="center"><b>Random search from pixabay</b></h1>
 
-    <ul class="gallery"></ul> -->
+          <form class="search-form" id="search-form">
+            <input
+              type="text"
+              name="query"
+              id="searchQuery"
+              autocomplete="off"
+              placeholder="Search images..."
+            />
+          </form>
 
-    <!-- --- --- --- pagination --- --- ---  -->
-    <form class="form-inline search-form js-search-form">
-      <div class="form-group mx-sm-3 mb-2">
-        <label for="searchQuery" class="sr-only"
-          >What we are looking for?
-        </label>
-        <input
-          type="text"
-          class="form-control"
-          name="query"
-          id="searchQuery"
-          placeholder="what we are looking for?"
-          autocomplete="off"
-        />
-      </div>
+          <div class="gallery-container">
+            <ul class="gallery"></ul>
+          </div>
 
-      <button type="submit" class="btn btn-primary mb-2">Find</button>
-    </form>
-
-    <ul class="articles js-articles-container"></ul>
-
-    <button
-      type="button"
-      class="btn btn-primary button"
-      data-action="load-more"
-    >
-      <span
-        class="spinner-border spinner-border-sm spinner is-hidden"
-        role="status"
-        arial-hidden="true"
-      ></span>
-      <span class="label">Show more</span>
-    </button>
+          <button
+            type="button"
+            class="btn btn-primary button load-more"
+            data-action="load-more"
+          >
+            <span
+              class="spinner-border spinner-border-sm spinner is-hidden"
+              role="status"
+              arial-hidden="true"
+            ></span>
+            <span class="label">Show more</span>
+          </button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
