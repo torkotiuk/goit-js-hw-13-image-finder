@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* main styles */
 img {
   display: block;
