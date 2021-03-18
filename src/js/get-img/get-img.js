@@ -64,7 +64,14 @@ async function onLoadMore() {
     appendArticlesMarkup(images);
     loadMoreBtn.enable();
   });
-  window.scrollTo(250, document.body.scrollHeight);
+  scrollBy();
+}
+
+function scrollBy() {
+  window.scrollBy({
+    top: screen.height - 300,
+    behavior: 'smooth',
+  });
 }
 
 loadMoreBtn.refs.button.addEventListener('click', onLoadMore);
